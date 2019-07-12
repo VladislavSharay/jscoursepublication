@@ -1,8 +1,14 @@
 .user{
+    position: relative;
     float: right;
+    left:-20px;
+    top:5px;
 }
 .logo{
     float:left;
+    position: relative;
+    left:20px;
+    top:5px;
 }
 h1{
     font-family: Florence, cursive;  
@@ -20,54 +26,66 @@ h1{
    }
 
 #images{
-    position: relative;
-    top: 200px;
+    position: absolute;
+    top: 150px;
+    left:80px;
 }
 .photo1{
-    float: left; 
-    margin: 5px,35px,35px,35px;
+    position: relative;
+    top: -250px;
     border:3px solid #85A0C9;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
 }
 .photo2{
-    float: left; 
-    margin: 35px;
+    position: relative;
+    top: -300px;
     border:3px solid #85A0C9;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
 }
 .photo3{
-    float: left; 
-    margin: 35px;
+    
     border:3px solid #85A0C9;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
 }
 .photo4{
-    float: left; 
-    margin:  35px;
+    position: relative;
+    top: -300px;
     border:3px solid #85A0C9;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
 }
 .photo5{
-    float: left; /* Выравнивание по левому краю */
-    margin: 35px;
+    position: relative;
+    top: -300px;
     border:3px solid #85A0C9;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
 }
 .photo6{
-    float: left; 
-    margin: 35px;
+    position: relative;
+    top: -300px;
     border:3px solid #85A0C9;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
+}
+#info{
+    font-family: Florence, cursive; 
+    position: relative;
+    float: right;
+    top:90px;
+}
+#search{
+    position: relative;
+    float: center;
+    top:10px;
+    left: 800px;
 }
