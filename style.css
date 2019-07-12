@@ -1,3 +1,6 @@
+header{
+    margin: 0, auto;
+}
 .user {
     position: relative;
     float: right;
@@ -29,7 +32,6 @@ h1 {
 
 
 .line {
-    margin: 0 auto;
     border: none;
     background-color: rgb(0, 0, 0);
     height: 2px;
