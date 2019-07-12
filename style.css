@@ -21,9 +21,10 @@ h1 {
 
 #search {
     position: relative;
-    top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    top: 20px;
+    display: block;
+    margin-left: 45%;
+    margin-right: 65%;
 }
 
 
@@ -43,14 +44,15 @@ h1 {
 }
 
 #images {
-    position: absolute;
+    position:relative;
     top: 150px;
     left: 80px;
 }
 
 .photo1 {
-    position: relative;
-    top: -250px;
+    position: absolute;
+    top: 50px;
+    left:10px;
     border: 3px solid #85A0C9;
     border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -58,8 +60,9 @@ h1 {
 }
 
 .photo2 {
-    position: relative;
-    top: -300px;
+    position: absolute;
+    top: 50px;
+    left:600px;
     border: 3px solid #85A0C9;
     border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -67,7 +70,9 @@ h1 {
 }
 
 .photo3 {
-
+    position: absolute;
+    top: 50px;
+    left:1200px;
     border: 3px solid #85A0C9;
     border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -75,8 +80,9 @@ h1 {
 }
 
 .photo4 {
-    position: relative;
-    top: -300px;
+    position: absolute;
+    top: 620px;
+    left:10px;
     border: 3px solid #85A0C9;
     border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -84,8 +90,9 @@ h1 {
 }
 
 .photo5 {
-    position: relative;
-    top: -300px;
+    position: absolute;
+    top: 580px;
+    left:600px;
     border: 3px solid #85A0C9;
     border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -93,8 +100,9 @@ h1 {
 }
 
 .photo6 {
-    position: relative;
-    top: -300px;
+    position: absolute;
+    top: 880px;
+    left: 1200px;
     border: 3px solid #85A0C9;
     border-radius: 30px;
     -webkit-border-radius: 30px;
