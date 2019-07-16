@@ -1,0 +1,70 @@
+.userLogo{
+  position: relative;
+  top: 200px;
+  left:200px;
+  border: 1px solid rgb(0, 0, 0);
+}
+.name{
+  position: absolute;
+  top: 280px;
+  left:550px;
+  font-family: monospace;
+  font-size: 2em;
+}
+.profilePage #info {
+  font-family: monospace;
+  font-size: 1.5em;
+  position: relative;
+  top: 320px;
+  left: 490px;
+  
+} 
+
+.imgButton{
+position: relative;
+top: 180px;
+margin-left: auto;
+margin-right: auto;
+width: 450px;
+}
+  .posts{
+    font-size: 150%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 8px 60px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+     margin: 15px; 
+     user-select:none;
+}
+.posts:active {
+  color: rgb(121, 121, 121);
+  border: 1px solid rgb(121, 121, 121);
+}
+.tagged{
+    font-size: 150%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 8px 50px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 15px;
+    user-select:none;
+}  
+.tagged:active {
+  color: rgb(121, 121, 121);
+  border: 1px solid rgb(121, 121, 121);
+}
+.imgProfile{
+  position: relative;
+  top:200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1300px; 
+}

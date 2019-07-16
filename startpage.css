@@ -1,0 +1,81 @@
+ header {
+    position: relative;
+    margin: 0, auto;
+}
+
+.logo {
+    cursor: pointer;
+    user-select: none;
+    float: left;
+    position: relative;
+    left: 1%;
+    top: 10px;
+}
+.login{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 150%;
+    position: absolute;
+    top:10px;
+    float: right;
+    right:1%;
+    cursor: pointer;
+    user-select:none;
+    padding:10px 25px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.login:active {
+    color: rgb(121, 121, 121);
+    border: 3px solid rgb(121, 121, 121);
+  }
+header h1{
+    cursor: pointer;
+    user-select: none;
+    font-family: Florence, cursive;
+    position: absolute;
+    top: -10px;
+    left: 7%;
+}
+header h1:active {
+    color: rgb(121, 121, 121);
+   
+  }
+
+#search {
+    position: relative;
+    top: 25px;
+    display: block;
+    margin-left: 45%;
+    margin-right: 65%;
+}
+
+
+.line {
+    border: none;
+    background-color: rgb(0, 0, 0);
+    height: 2px;
+    position: relative;
+    top: 70px;
+
+}
+
+.startPage #info {
+    font-family: monospace;
+    font-size: 1.5em;
+    position: relative;
+    float: right;
+    top:100px;
+    right: 20px;
+    
+}
+
+#images {
+    position: relative;
+  top:200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1350px; 
+}
+
