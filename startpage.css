@@ -1,7 +1,7 @@
- header {
-    position: relative;
-    margin: 0, auto;
-}
+html,body{
+    width: 100%;
+    height: 95%;
+} 
 
 .logo {
     cursor: pointer;
@@ -15,7 +15,7 @@
     font-family: monospace;
     font-weight: bold;
     font-size: 150%;
-    position: absolute;
+    position: relative;
     top:10px;
     float: right;
     right:1%;
@@ -35,7 +35,7 @@ header h1{
     user-select: none;
     font-family: Florence, cursive;
     position: absolute;
-    top: -10px;
+    top: 0px;
     left: 7%;
 }
 header h1:active {
@@ -72,10 +72,11 @@ header h1:active {
 }
 
 #images {
-    position: relative;
+    left:7%;
+  position: relative;
   top:200px;
   margin-left: auto;
   margin-right: auto;
-  width: 1350px; 
+  width: 1550px; 
 }
 
