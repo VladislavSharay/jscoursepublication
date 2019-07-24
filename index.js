@@ -2,12 +2,13 @@ var routes = {
 	'': {
 		html: 'home/home.html'
 	},
-	'feed': {
-		html: 'feed/feed.html',
-		src: './feed/feed.js'
+	'registration': {
+		html: 'registration/registration.html',
+		// src: './registration/registration.js'
 	},
 	'login': {
 		html: 'login/login.html'
+		
 	}
 };
 
@@ -73,4 +74,3 @@ var handleRouting = (function(){
 
 window.addEventListener('DOMContentLoaded', handleRouting);
 window.addEventListener('hashchange', handleRouting);
-

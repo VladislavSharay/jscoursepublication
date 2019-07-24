@@ -40,6 +40,10 @@ input[type="password"] {
     padding:5px 10px;
 }
 #registrationLink{
+    text-decoration: none;
+    color: black;
+    padding:5px 10px;
+    text-align: center;
     position: relative;
     left:5px;
     font-family: monospace;
@@ -48,8 +52,8 @@ input[type="password"] {
     background-color: white;
     cursor: pointer;
     user-select:none;
-    height: 40px;
-    width: 280px;
+    height: 25px;
+    width: 255px;
     border: 3px solid rgb(0, 0, 0);
     border-radius: 10px;
    
@@ -58,3 +62,12 @@ input[type="password"] {
     color: rgb(121, 121, 121);
     border: 3px solid rgb(121, 121, 121);
   } 
+  h2{
+    cursor: pointer;
+    user-select: none;
+    font-family: Florence, cursive;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+}

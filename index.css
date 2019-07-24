@@ -12,6 +12,8 @@ html,body{
     top: 10px;
 }
 .login{
+    text-decoration: none;
+    color: black;
     font-family: monospace;
     font-weight: bold;
     font-size: 150%;
@@ -30,15 +32,18 @@ html,body{
     color: rgb(121, 121, 121);
     border: 3px solid rgb(121, 121, 121);
   }
-header h1{
+.logoInsta{
+    text-decoration: none;
+    font-size: 200%;
+    color: black;
     cursor: pointer;
     user-select: none;
     font-family: Florence, cursive;
     position: absolute;
-    top: 0px;
+    top: 20px;
     left: 7%;
 }
-header h1:active {
+.logoInsta:active {
     color: rgb(121, 121, 121);
    
   }
@@ -61,22 +66,4 @@ header h1:active {
 
 }
 
-.startPage #info {
-    font-family: monospace;
-    font-size: 1.5em;
-    position: relative;
-    float: right;
-    top:100px;
-    right: 20px;
-    
-}
-
-#images {
-    left:7%;
-  position: relative;
-  top:200px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1550px; 
-}
 
