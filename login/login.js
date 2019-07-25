@@ -1,11 +1,7 @@
-let sub = document.querySelector("#subSignIn");
-
 let formSign = document.querySelector('#loginIN')
-formSign.addEventListener('submit', event => {
+let token;
+formSign.addEventListener('submit', function (event) {
     event.preventDefault();
-})
-
-sub.addEventListener('click', function (event) {
     let log = document.getElementById("logSignIn");
     let pass = document.getElementById("passSignIn");
     let vallog = log.value;
@@ -14,13 +10,9 @@ sub.addEventListener('click', function (event) {
         email: vallog,
         password: valpass
     };
-    console.log(tokenStr);
     doRequestSignIn(signInReq);
-    
+
 });
-
-
-
 
 function doRequestSignIn(data) {
     fetch('https://intern-staging.herokuapp.com/api/identification/sign_in', {
@@ -33,8 +25,15 @@ function doRequestSignIn(data) {
     }).then(
         resp => resp.json()
     ).then(
-        json => {console.log(json)
-        let tokenStr=json.token;
-    }
+        json => {
+            console.log(json)
+            
+           token = json.token;
+            alert("Вы авторизовались!");
+           document.cookie = 'cookieUserIn =' + token+ ';path=/;';
+           
+           
+            document.location.href = "#/profilepage";
+        }
     );
 }

@@ -2,14 +2,19 @@ var routes = {
 	'': {
 		html: 'home/home.html'
 	},
+	'login': {
+		html: 'login/login.html',
+		src: './login/login.js'
+		},
 	'registration': {
 		html: 'registration/registration.html',
-		// src: './registration/registration.js'
+		 src: './registration/registration.js'
 	},
-	'login': {
-		html: 'login/login.html'
-		
+	'profilepage': {
+		html: 'profilepage/profilepage.html',
+		 src: './profilepage/profilepage.js'
 	}
+	
 };
 
 var requestTemplate = (function () {
@@ -33,11 +38,11 @@ var runScript = (function () {
 
 	return function (src) {
 		if(cache.hasOwnProperty(src)){
-			cache[src]();
+			cache[src];
 		} else {
 			import(src).then(function (module) {
 				cache[src] = module.default;
-				cache[src]();
+				cache[src];
 			}).catch( function (err) {
 				console.error(err);
 			})
@@ -74,3 +79,16 @@ var handleRouting = (function(){
 
 window.addEventListener('DOMContentLoaded', handleRouting);
 window.addEventListener('hashchange', handleRouting);
+
+
+
+
+let cookieToken = get_cookie ( "cookieUserIn" );
+           function get_cookie ( cookie_name ){
+             var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
+             if ( results )
+               return ( unescape ( results[2] ) );
+             else
+               return null;
+           }
+// document.addEventListener("DOMContentLoaded", get_cookie ( "cookieUserIn" ));

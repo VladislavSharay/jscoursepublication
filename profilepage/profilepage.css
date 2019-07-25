@@ -1,3 +1,19 @@
+.signOut{
+  text-decoration: none;
+    color: black;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 150%;
+    position: absolute;
+    top:130px;
+    float: right;
+    right:2%;
+    cursor: pointer;
+    user-select:none;
+    padding:10px 25px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
 .userLogo{
   position: relative;
   top: 200px;
@@ -22,7 +38,7 @@
 
 .imgButton{
 position: relative;
-top: 180px;
+top: 100px;
 margin-left: auto;
 margin-right: auto;
 width: 450px;
@@ -63,7 +79,7 @@ width: 450px;
 }
 .imgProfile{
   position: relative;
-  top:200px;
+  top:150px;
   margin-left: auto;
   margin-right: auto;
   width: 1300px; 
