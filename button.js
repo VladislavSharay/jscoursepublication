@@ -8,11 +8,3 @@ loginbutton.addEventListener("click", function () {
         document.location.href = "#/login";
     }
 })
-
-// login.addEventListener('click', event => {
-// if(token){
-//     document.location.href = "#/profilepage";
-// } else{
-//     document.location.href = "#/login";
-// }
-// }

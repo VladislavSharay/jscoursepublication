@@ -31,8 +31,6 @@ function doRequestSignIn(data) {
            token = json.token;
             alert("Вы авторизовались!");
            document.cookie = 'cookieUserIn =' + token+ ';path=/;';
-           
-           
             document.location.href = "#/profilepage";
         }
     );

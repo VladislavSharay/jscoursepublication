@@ -90,5 +90,6 @@ let cookieToken = get_cookie ( "cookieUserIn" );
                return ( unescape ( results[2] ) );
              else
                return null;
-           }
-// document.addEventListener("DOMContentLoaded", get_cookie ( "cookieUserIn" ));
+		   }
+		   
+// window.addEventListener("DOMContentLoaded", cookieToken);
