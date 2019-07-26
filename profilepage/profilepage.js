@@ -19,11 +19,10 @@ tagged.addEventListener("click", function () {
 
 
 signOutBtn.addEventListener("click", function () {
-        
-        
-        document.location.href ="#/login";
+       
         delete_cookie('cookieUserIn');
         cookieToken = get_cookie ( "cookieUserIn" ); 
+         document.location.href ="#/";
 })
 
 
@@ -59,24 +58,24 @@ let imgOut = document.createElement('img');
 imgOut.id = 'imgOut'; imgOut.width='400'; imgOut.height='400';
 let formImg = document.forms.namedItem('addPhoto');
 
-container.appendChild(imgOut)
+// container.appendChild(imgOut)
 
 
-formImg.addEventListener('submit', function(ev){
-        var formImgD = new FormData(formImg);
+// formImg.addEventListener('submit', function(ev){
+//         var formImgD = new FormData(formImg);
 
-        formImgD.append('parentEntityId', '1455qwe1');
+//         formImgD.append('parentEntityId', '1455qwe1');
 
-        doRequestImg('POST', formImgD, {
-                'token': cookieToken
-        });
+//         doRequestImg('POST', formImgD, {
+//                 'token': cookieToken
+//         });
 
-        ev.preventDefault();
+//         ev.preventDefault();
 
-})
+// })
 
-if(imgOut.src){
-        imgOut.style.display='block';
-} else{
-        imgOut.style.display='none';
-}
+// if(imgOut.src){
+//         imgOut.style.display='block';
+// } else{
+//         imgOut.style.display='none';
+// }

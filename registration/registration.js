@@ -46,7 +46,7 @@ const doRequest = (url, method, data, options) => new Promise((resolve, _reject)
                     else alert('Такой пользователь уже зарегистрирован');
                 }
                 if (json.error) checkSignUp = json.error;
-                else if (options == 'activate') alert('Ваш пароль пришел на почту :)')
+                else if (options == 'activate') alert('Ваш пароль отправлен на почту :)')
                 document.location.href = "#/login";
             }
         ))
