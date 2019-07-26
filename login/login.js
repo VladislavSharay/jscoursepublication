@@ -10,8 +10,9 @@ formSign.addEventListener('submit', function (event) {
         email: vallog,
         password: valpass
     };
+    
     doRequestSignIn(signInReq);
-
+    document.location.href = "#/profilepage";
 });
 
 function doRequestSignIn(data) {
@@ -29,10 +30,10 @@ function doRequestSignIn(data) {
             console.log(json)
             
            token = json.token;
-            alert("Вы авторизовались!");
-           document.cookie = 'cookieUserIn =' + token+ ';path=/';
+            // alert("Вы авторизовались!");
+           document.cookie = 'cookieUserIn =' + token+ '; path=/';
            cookieToken = get_cookie ( "cookieUserIn" );
-            document.location.href = "#/profilepage";
+            // document.location.href = "#/profilepage";
         }
     );
 }

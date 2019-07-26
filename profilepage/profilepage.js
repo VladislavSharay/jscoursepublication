@@ -19,9 +19,11 @@ tagged.addEventListener("click", function () {
 
 
 signOutBtn.addEventListener("click", function () {
+        
+        
+        document.location.href ="#/login";
         delete_cookie('cookieUserIn');
         cookieToken = get_cookie ( "cookieUserIn" ); 
-        document.location.href = "#/login";  
 })
 
 
