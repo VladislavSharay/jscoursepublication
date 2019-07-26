@@ -1,17 +1,16 @@
-let profilepage = document.querySelector(".profilepage");
 let imgPosts = document.querySelector(".imgPosts");
 let imgTagged = document.querySelector(".imgTagged");
-let posts = document.querySelector(".posts");
-let tagged = document.querySelector(".tagged")
+let postsBtn = document.querySelector(".posts");
+let taggedBtn = document.querySelector(".tagged")
 let signOutBtn = document.querySelector(".signOut")
 
 imgTagged.style.display = "none";
 
-posts.addEventListener("click", function () {
+postsBtn.addEventListener("click", function () {
         imgPosts.style.display = "block";
         imgTagged.style.display = "none";
 })
-tagged.addEventListener("click", function () {
+taggedBtn.addEventListener("click", function () {
         imgPosts.style.display = "none";
         imgTagged.style.display = "block";
 })
@@ -22,7 +21,7 @@ signOutBtn.addEventListener("click", function () {
 
         delete_cookie('cookieUserIn');
         cookieToken = get_cookie("cookieUserIn");
-        document.location.href = "#/";
+        document.location.href = "#/login";
 })
 
 

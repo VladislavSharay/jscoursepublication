@@ -12,7 +12,7 @@ var routes = {
 	},
 	'profilepage': {
 		html: 'profilepage/profilepage.html',
-		 src: './profilepage/profilepage.js'
+		src: './profilepage/profilepage.js'
 	}
 	
 };
