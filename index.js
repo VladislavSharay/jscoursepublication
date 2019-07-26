@@ -83,13 +83,23 @@ window.addEventListener('hashchange', handleRouting);
 
 
 
-let cookieToken = get_cookie ( "cookieUserIn" );
-           function get_cookie ( cookie_name ){
-             var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
-             if ( results )
-               return ( unescape ( results[2] ) );
-             else
-               return null;
-		   }
-		   
-// window.addEventListener("DOMContentLoaded", cookieToken);
+// let cookieToken = get_cookie ( "cookieUserIn" );
+//            function get_cookie ( cookie_name ){
+//              var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
+//              if ( results )
+//                return ( unescape ( results[2] ) );
+//              else
+//                return null;
+// 		   }
+let cookieToken	   
+document.addEventListener("DOMContentLoaded", function(){
+	cookieToken = get_cookie ( "cookieUserIn" );      
+})
+
+function get_cookie ( cookie_name ){
+	var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
+	if ( results )
+	  return ( unescape ( results[2] ) );
+	else
+	  return null;
+  }

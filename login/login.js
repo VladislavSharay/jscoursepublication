@@ -30,7 +30,8 @@ function doRequestSignIn(data) {
             
            token = json.token;
             alert("Вы авторизовались!");
-           document.cookie = 'cookieUserIn =' + token+ ';path=/;';
+           document.cookie = 'cookieUserIn =' + token+ ';path=/';
+           cookieToken = get_cookie ( "cookieUserIn" );
             document.location.href = "#/profilepage";
         }
     );

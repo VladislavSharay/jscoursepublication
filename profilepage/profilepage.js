@@ -20,8 +20,10 @@ tagged.addEventListener("click", function () {
 
 signOutBtn.addEventListener("click", function () {
         delete_cookie('cookieUserIn');
-        document.location.href = "#/login";
+        cookieToken = get_cookie ( "cookieUserIn" ); 
+        document.location.href = "#/login";  
 })
+
 
 function delete_cookie(name) {
         document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
