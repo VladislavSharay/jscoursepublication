@@ -11,7 +11,7 @@ formSignUp.addEventListener('submit', event => {
     let method = 'POST';
     let form = formToJson(formSignUp);
     let opt = 'signUp';
-    
+
 
     doRequest(url, method, form, opt)
         .then(() => {
@@ -25,7 +25,7 @@ formSignUp.addEventListener('submit', event => {
                     .then(() => tokenStr = undefined)
             }
         });
-        
+
 })
 
 const doRequest = (url, method, data, options) => new Promise((resolve, _reject) => {
@@ -71,7 +71,6 @@ function getUsers() {
         resp => resp.json()
     ).then(
         json => console.log(json)
-        
+
     );
 }
-

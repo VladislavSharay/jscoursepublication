@@ -19,10 +19,10 @@ tagged.addEventListener("click", function () {
 
 
 signOutBtn.addEventListener("click", function () {
-       
+
         delete_cookie('cookieUserIn');
-        cookieToken = get_cookie ( "cookieUserIn" ); 
-         document.location.href ="#/";
+        cookieToken = get_cookie("cookieUserIn");
+        document.location.href = "#/";
 })
 
 
@@ -47,16 +47,16 @@ function doRequestImg(method, data, headers) {
                 json => {
                         console.log(json)
                         urlImg = json.url;
-                        imgOut.src=urlImg;
+                        imgOut.src = urlImg;
                 }
         );
 }
 
-let container = document.querySelector(".container");
-let addPhotoBtn = document.querySelector('.addPhoto');
-let imgOut = document.createElement('img');
-imgOut.id = 'imgOut'; imgOut.width='400'; imgOut.height='400';
-let formImg = document.forms.namedItem('addPhoto');
+// let container = document.querySelector(".container");
+// let addPhotoBtn = document.querySelector('.addPhoto');
+// let imgOut = document.createElement('img');
+// imgOut.id = 'imgOut'; imgOut.width='400'; imgOut.height='400';
+// let formImg = document.forms.namedItem('addPhoto');
 
 // container.appendChild(imgOut)
 
