@@ -1,3 +1,4 @@
+export default function(){
 let tokenStr;
 let API = 'https://intern-staging.herokuapp.com/api/identification';
 
@@ -73,4 +74,5 @@ function getUsers() {
         json => console.log(json)
 
     );
+}
 }

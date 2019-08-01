@@ -1,3 +1,4 @@
+export default function(){
 let formSign = document.querySelector('#loginIN')
 let token;
 formSign.addEventListener('submit', function (event) {
@@ -12,7 +13,7 @@ formSign.addEventListener('submit', function (event) {
     };
 
     doRequestSignIn(signInReq);
-    document.location.href = "#/profilepage";
+    
 });
 
 function doRequestSignIn(data) {
@@ -33,7 +34,9 @@ function doRequestSignIn(data) {
             // alert("Вы авторизовались!");
             document.cookie = 'cookieUserIn =' + token + '; path=/';
             cookieToken = get_cookie("cookieUserIn");
+            document.location.href = "#/profilepage";
             // document.location.href = "#/profilepage";
         }
     );
+}
 }

@@ -1,3 +1,5 @@
+export default function(){
+if(cookieToken){
 let imgPosts = document.querySelector(".imgPosts");
 let imgTagged = document.querySelector(".imgTagged");
 let postsBtn = document.querySelector(".posts");
@@ -50,7 +52,10 @@ function doRequestImg(method, data, headers) {
                 }
         );
 }
-
+} else{
+        document.location.href = "#/login";
+}
+// Загрузка фото
 // let container = document.querySelector(".container");
 // let addPhotoBtn = document.querySelector('.addPhoto');
 // let imgOut = document.createElement('img');
@@ -78,3 +83,4 @@ function doRequestImg(method, data, headers) {
 // } else{
 //         imgOut.style.display='none';
 // }
+}
