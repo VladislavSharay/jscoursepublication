@@ -9,7 +9,7 @@ html,body{
     float: left;
     position: relative;
     left: 1%;
-    top: 10px;
+    top: 20px;
 }
 .login{
     text-decoration: none;
@@ -18,9 +18,9 @@ html,body{
     font-weight: bold;
     font-size: 150%;
     position: relative;
-    top:10px;
+    top:20px;
     float: right;
-    right:1%;
+    right:2%;
     cursor: pointer;
     user-select:none;
     padding:10px 25px;
@@ -50,7 +50,7 @@ html,body{
 
 #search {
     position: relative;
-    top: 25px;
+    top: 35px;
     display: block;
     margin-left: 45%;
     margin-right: 65%;
@@ -63,7 +63,23 @@ html,body{
     height: 2px;
     position: relative;
     top: 70px;
-
+    
 }
+#app {
+    width:100%;
+    height: 90px;
+    margin:0px auto;
+    z-index:0;
+    top: 0px;
+  }
+   
+  #header {
+    width:100%;
+    height: 90px;
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+    top: 0px;
+  }
 
 

@@ -13,8 +13,34 @@ var routes = {
 	'profilepage': {
 		html: 'profilepage/profilepage.html',
 		src: './profilepage/profilepage.js'
-	}
-	
+    },
+    'travel':{
+        html: 'profilepage/openImg/travel/travel.html'
+    },
+    'nature':{
+        html: 'profilepage/openImg/nature/nature.html'
+    },
+    'film':{
+        html: 'profilepage/openImg/film/film.html'
+    },
+    'fashion':{
+        html: 'profilepage/openImg/fashion/fashion.html'
+    },
+    'animals':{
+        html: 'profilepage/openImg/animals/animals.html'
+    },
+    'people':{
+        html: 'profilepage/openImg/people/people.html'
+    },
+    'spirtuality':{
+        html: 'profilepage/openImg/spirtuality/spirtuality.html'
+    },
+    'health':{
+        html: 'profilepage/openImg/health/health.html'
+    },
+    'architecture':{
+        html: 'profilepage/openImg/architecture/architecture.html'
+    },
 };
 
 var requestTemplate = (function () {
