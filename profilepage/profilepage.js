@@ -31,56 +31,56 @@ function delete_cookie(name) {
         document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 
+}
+
+ 
 
 
 
 
+// Загрузка фото
 let urlImg
+let container = document.querySelector(".container");
+let addPhotoBtn = document.querySelector('.addPhoto');
+let imgOut = document.createElement('img');
+imgOut.id = 'imgOut'; imgOut.width='400'; imgOut.height='400';
+let formImg = document.forms.namedItem('addPhoto');
 
+imgOut.style.display='none';
+
+container.appendChild(imgOut)
+
+
+formImg.addEventListener('submit', function(ev){
+        var formImgD = new FormData(formImg);
+
+        formImgD.append('parentEntityId', '1455qwe1');
+
+        doRequestImg('POST', formImgD, {
+                'token': cookieToken
+        });
+
+        ev.preventDefault();
+
+})
 function doRequestImg(method, data, headers) {
         fetch('https://intern-staging.herokuapp.com/api/file', {
-                method: method,
-                body: data,
-                headers: headers,
+            method: method,
+            body: data,
+            headers: headers,
         }).then(
-                resp => resp.json()
+            resp => resp.json()
         ).then(
-                json => {
-                        console.log(json)
-                        urlImg = json.url;
-                        imgOut.src = urlImg;
-                }
+            json => {
+                console.log(json)
+                urlImg = json.url;
+                 imgOut.src=urlImg;
+                 imgOut.style.display='block';
+                
+            }
         );
-}
-} else{
-        document.location.href = "#/login";
-}
-// Загрузка фото
-// let container = document.querySelector(".container");
-// let addPhotoBtn = document.querySelector('.addPhoto');
-// let imgOut = document.createElement('img');
-// imgOut.id = 'imgOut'; imgOut.width='400'; imgOut.height='400';
-// let formImg = document.forms.namedItem('addPhoto');
+    }
 
-// container.appendChild(imgOut)
+ }
 
 
-// formImg.addEventListener('submit', function(ev){
-//         var formImgD = new FormData(formImg);
-
-//         formImgD.append('parentEntityId', '1455qwe1');
-
-//         doRequestImg('POST', formImgD, {
-//                 'token': cookieToken
-//         });
-
-//         ev.preventDefault();
-
-// })
-
-// if(imgOut.src){
-//         imgOut.style.display='block';
-// } else{
-//         imgOut.style.display='none';
-// }
-}

@@ -100,3 +100,20 @@ width: 450px;
   margin-right: auto;
   width: 1300px; 
 }
+
+
+.addPhoto{width:300px;}
+#imgIN{display:none;}
+.addPhoto label{
+cursor:pointer;
+background:#36c;
+border-radius:3px;
+padding:10px 25px;
+color:#fff;
+font-weight:bold;
+text-align: center;
+}
+.addPhoto label:hover{background:#fc0;}
+#imgNO{
+margin-top:20px;
+color:#f00;}
