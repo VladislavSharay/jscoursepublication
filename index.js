@@ -16,19 +16,19 @@ var routes = {
     },
     'travel':{
         html: 'profilepage/openImg/travel/travel.html',
-        src: './profilepage/openImg/animals/travel.js'
+        src: './profilepage/openImg/travel/travel.js'
     },
     'nature':{
         html: 'profilepage/openImg/nature/nature.html',
-        src: './profilepage/openImg/animals/nature.js'
+        src: './profilepage/openImg//nature/nature.js'
     },
     'film':{
         html: 'profilepage/openImg/film/film.html',
-        src: './profilepage/openImg/animals/film.js'
+        src: './profilepage/openImg/film/film.js'
     },
     'fashion':{
         html: 'profilepage/openImg/fashion/fashion.html',
-        src: './profilepage/openImg/animals/fashion.js'
+        src: './profilepage/openImg/fashion/fashion.js'
     },
     'animals':{
         html: 'profilepage/openImg/animals/animals.html',
@@ -36,19 +36,19 @@ var routes = {
     },
     'people':{
         html: 'profilepage/openImg/people/people.html',
-        src: './profilepage/openImg/animals/people.js'
+        src: './profilepage/openImg/people/people.js'
     },
     'spirtuality':{
         html: 'profilepage/openImg/spirtuality/spirtuality.html',
-        src: './profilepage/openImg/animals/spirtuality.js'
+        src: './profilepage/openImg/spirtuality/spirtuality.js'
     },
     'health':{
         html: 'profilepage/openImg/health/health.html',
-        src: './profilepage/openImg/animals/health.js'
+        src: './profilepage/openImg/health/health.js'
     },
     'architecture':{
         html: 'profilepage/openImg/architecture/architecture.html',
-        src: './profilepage/openImg/animals/architecture.js'
+        src: './profilepage/openImg/architecture/architecture.js'
     },
 };
 

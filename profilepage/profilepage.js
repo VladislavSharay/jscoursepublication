@@ -38,48 +38,48 @@ function delete_cookie(name) {
 
 
 // Загрузка фото
-let urlImg
-let container = document.querySelector(".container");
-let addPhotoBtn = document.querySelector('.addPhoto');
-let imgOut = document.createElement('img');
-imgOut.id = 'imgOut'; imgOut.width='400'; imgOut.height='400';
-let formImg = document.forms.namedItem('addPhoto');
+// let urlImg
+// let container = document.querySelector(".container");
+// let addPhotoBtn = document.querySelector('.addPhoto');
+// let imgOut = document.createElement('img');
+// imgOut.id = 'imgOut'; imgOut.width='400'; imgOut.height='400';
+// let formImg = document.forms.namedItem('addPhoto');
 
-imgOut.style.display='none';
+// imgOut.style.display='none';
 
-container.appendChild(imgOut)
+// container.appendChild(imgOut)
 
 
-formImg.addEventListener('submit', function(ev){
-        var formImgD = new FormData(formImg);
+// formImg.addEventListener('submit', function(ev){
+//         var formImgD = new FormData(formImg);
 
-        formImgD.append('parentEntityId', '1455qwe1');
+//         formImgD.append('parentEntityId', '1455qwe1');
 
-        doRequestImg('POST', formImgD, {
-                'token': cookieToken
-        });
+//         doRequestImg('POST', formImgD, {
+//                 'token': cookieToken
+//         });
 
-        ev.preventDefault();
+//         ev.preventDefault();
 
-})
-function doRequestImg(method, data, headers) {
-        fetch('https://intern-staging.herokuapp.com/api/file', {
-            method: method,
-            body: data,
-            headers: headers,
-        }).then(
-            resp => resp.json()
-        ).then(
-            json => {
-                console.log(json)
-                urlImg = json.url;
-                 imgOut.src=urlImg;
-                 imgOut.style.display='block';
+// })
+// function doRequestImg(method, data, headers) {
+//         fetch('https://intern-staging.herokuapp.com/api/file', {
+//             method: method,
+//             body: data,
+//             headers: headers,
+//         }).then(
+//             resp => resp.json()
+//         ).then(
+//             json => {
+//                 console.log(json)
+//                 urlImg = json.url;
+//                  imgOut.src=urlImg;
+//                  imgOut.style.display='block';
                 
-            }
-        );
-    }
+//             }
+//         );
+//     }
 
- }
+  }
 
 
