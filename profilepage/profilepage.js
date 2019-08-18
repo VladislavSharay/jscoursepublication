@@ -33,7 +33,6 @@ function delete_cookie(name) {
 
 }
 
- 
 
 
 

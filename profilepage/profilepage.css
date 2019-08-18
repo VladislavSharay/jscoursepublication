@@ -51,6 +51,28 @@
   left: 490px;
   
 } 
+input[type=file]{
+  font-size: 150%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 8px 60px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+   margin: 15px; 
+   user-select:none;
+}
+
+input[type=submit] {
+  padding:5px 15px; 
+  background:#ccc; 
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+}
 
 .imgButton{
 position: relative;
@@ -101,19 +123,9 @@ width: 450px;
   width: 1300px; 
 }
 
-
-.addPhoto{width:300px;}
-#imgIN{display:none;}
-.addPhoto label{
-cursor:pointer;
-background:#36c;
-border-radius:3px;
-padding:10px 25px;
-color:#fff;
-font-weight:bold;
-text-align: center;
-}
-.addPhoto label:hover{background:#fc0;}
-#imgNO{
-margin-top:20px;
-color:#f00;}
+/* .addPhoto .inpSUB{color:#555;padding:0;width:200px;margin:auto;display:block;border:2px solid rgb(0, 0, 0)}.addPhoto .inpSUB:hover,
+.addPhoto .inpSUB:focus{color:#888;border-color:#888}
+.addPhoto .inpIMG{width:.1px;height:.1px;opacity:0;overflow:hidden;position:absolute;z-index:-1}
+.addPhoto .inpIMG + .inpSUB{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 10px;cursor:pointer}
+.addPhoto .inpIMG + .inpSUB .icon:before{content:"\f093"}
+ */

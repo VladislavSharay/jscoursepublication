@@ -27,7 +27,8 @@ var routes = {
         html: 'profilepage/openImg/fashion/fashion.html'
     },
     'animals':{
-        html: 'profilepage/openImg/animals/animals.html'
+        html: 'profilepage/openImg/animals/animals.html',
+        src: './profilepage/openImg/animals/animals.js'
     },
     'people':{
         html: 'profilepage/openImg/people/people.html'
