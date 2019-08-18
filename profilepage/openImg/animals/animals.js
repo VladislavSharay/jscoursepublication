@@ -7,7 +7,7 @@ formComment.addEventListener('submit', function (event) {
     let valCommentAdd = commentAdd.value;
     let comment = {
         message: valCommentAdd,
-        parentId: 'animals3'
+        parentId: 'animals'
     };
     let tokenStr = cookieToken;
     doRequestComment(comment, tokenStr);
@@ -34,7 +34,7 @@ function doRequestComment(data, token) {
 var container = document.getElementById("container");
 
 function commentOut(token) {
-    fetch('https://intern-staging.herokuapp.com/api/comment?parentId=animals3', {
+    fetch('https://intern-staging.herokuapp.com/api/comment?parentId=animals', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
