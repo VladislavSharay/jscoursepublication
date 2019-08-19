@@ -6,15 +6,18 @@ let postsBtn = document.querySelector(".posts");
 let taggedBtn = document.querySelector(".tagged")
 let signOutBtn = document.querySelector(".signOut")
 
+
 imgTagged.style.display = "none";
 
 postsBtn.addEventListener("click", function () {
         imgPosts.style.display = "block";
         imgTagged.style.display = "none";
+    
 })
 taggedBtn.addEventListener("click", function () {
         imgPosts.style.display = "none";
         imgTagged.style.display = "block";
+       
 })
 
 
@@ -45,11 +48,10 @@ formImg.addEventListener('submit', function (ev) {
     ev.preventDefault();
     var formImgD = new FormData(formImg);
 
-    formImgD.append('parentEntityId', 'insta');
+    formImgD.append('parentEntityId', 'insta1');
     
     doRequestImg('POST', formImgD, {'token': cookieToken});
-    containerImg.innerText='';
-    imgOUT(cookieToken)
+   
 })
 
 
@@ -63,6 +65,8 @@ function doRequestImg(method, data, headers) {
     ).then(
         json => {
             console.log(json)   
+            containerImg.innerText='';
+            imgOUT(cookieToken)
         }
     );
 }
@@ -70,7 +74,7 @@ function doRequestImg(method, data, headers) {
 
 
 function imgOUT(token) {
-        fetch('https://intern-staging.herokuapp.com/api/file/insta', {
+        fetch('https://intern-staging.herokuapp.com/api/file/insta1', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -97,31 +101,25 @@ function imgOUT(token) {
     }
     imgOUT(cookieToken)
    }
+
+
 //Кноппка загрузки
 
-var containerToggle = document.createElement("div");
-containerToggle.id = "container";
-
 let imgBtn=document.querySelector('.imgBtn')
-let fileBtn=document.querySelector('#fileBtn')
-let inpSUB=document.querySelector('#inpSUB')
+let addPhotoForm=document.querySelector('.addPhotoForm')
 
-containerToggle.appendChild(fileBtn);
-containerToggle.appendChild(inpSUB);
 
-imgBtn.innerText = 'Click me';
-imgBtn.style.display="block";
-// containerToggle.style.display = "block";
-// fileBtn.style.display = "none"
-// inpSUB.style.display = "none"
 
-// imgBtn.addEventListener("click", function () {
-//         if (containerToggle.style.display == "none") {
-//             containerToggle.style.display = "block"
-//         } else {
-//             containerToggle.style.display = "none"
-//         }
-//     })
+// imgBtn.style.display = "block"
+addPhotoForm.style.display = "none"
+
+imgBtn.addEventListener("click", function () {
+        if (addPhotoForm.style.display == "none") {
+                addPhotoForm.style.display = "block"
+        } else {
+                addPhotoForm.style.display = "none"
+        }
+    })
 
 
    var inputs = document.querySelectorAll('.inpIMG');

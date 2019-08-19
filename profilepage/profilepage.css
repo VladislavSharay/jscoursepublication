@@ -15,10 +15,23 @@
     border-radius: 10px;
 }
 .addPhoto{
-  position: relative;
-left:300px;
+  text-decoration: none;
+  color: black;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 150%;
+  position: absolute;
+  top:230px;
+  float: right;
+  right:2%;
+  cursor: pointer;
+  user-select:none;
+  padding:10px 25px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
   
 }
+
 .userLogo{
   position: relative;
   top: 200px;
@@ -121,7 +134,8 @@ width: 450px;
 	outline: -webkit-focus-ring-color auto 5px;
 }
 .inpIMG + label:hover {
-  background-color: rgb(141, 141, 141);
+  background-color: rgb(0, 0, 136);
+  color:white;
 }
 input[type=submit] {
   width: 200px;
@@ -136,3 +150,7 @@ input[type=submit] {
   border: 1px solid rgb(0, 0, 0);
    user-select:none;
 } 
+input[type=submit]:hover{
+  background-color: rgb(0, 0, 136);
+  color:white;
+}
