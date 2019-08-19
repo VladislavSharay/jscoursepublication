@@ -21,16 +21,15 @@
                 </form> -->
 
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<!-- <div class="addPhoto">
-    <form action="" name='addPhoto' class="addPhoto">
-    <input type="file" name="file" id="file" class="inpIMG">
-    <label for="file" class="inpSUB">
-      <i class="icon fa fa-check"></i>
-      <span class="js-fileName">Загрузить фото</span>
-    </label>
-    <input type="submit" value="Отправить" id='inpSUB'>
+
+                <div class="addPhoto">
+                        <div class='imgBtn'></div>
+    <form action="" name='addPhotoForm' class="addPhotoForm">
+    <input type="file" name="file" id="file" class="inpIMG" data-multiple-caption="{count} files selected" multiple>
+    <label for="file" id='fileBtn'>Choose a file</label>
+    <p><input type="submit" value="Отправить" id='inpSUB'></p>
   </form>
- </div> -->
+ </div>
         <div class=imgProfile>
             <div class="imgButton">
                 <a class="posts">Posts</a>
@@ -38,7 +37,7 @@
             </div>
             <div class="imgProfileOut">
                 <div class="imgPosts">
-                    <div class=container></div>
+                    <div id='containerImg'></div>
                     <a href='#/travel'><img src=https://source.unsplash.com/600x600/?travel" weidth="400px"; height="400px"; id="travel"></a> 
                     <a href='#/nature'><img src=https://source.unsplash.com/600x600/?nature" weidth="400px"; height="400px"; id='nature'></a>
                     <a href='#/film'><img src=https://source.unsplash.com/600x600/?film" weidth="400px"; height="400px"; id='film'> </a>
