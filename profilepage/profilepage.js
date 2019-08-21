@@ -48,7 +48,7 @@ formImg.addEventListener('submit', function (ev) {
     ev.preventDefault();
     var formImgD = new FormData(formImg);
 
-    formImgD.append('parentEntityId', 'insta1');
+    formImgD.append('parentEntityId', 'insta2');
     
     doRequestImg('POST', formImgD, {'token': cookieToken});
    
@@ -74,7 +74,7 @@ function doRequestImg(method, data, headers) {
 
 
 function imgOUT(token) {
-        fetch('https://intern-staging.herokuapp.com/api/file/insta1', {
+        fetch('https://intern-staging.herokuapp.com/api/file/insta2', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
